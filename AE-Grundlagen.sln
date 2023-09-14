@@ -5,7 +5,11 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taschenrechner", "Taschenrechner\Taschenrechner.csproj", "{1484773B-9723-4A5D-9A62-EF983655F857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schleifen", "Schleifen\Schleifen.csproj", "{88AC8591-5A71-4CA5-97F4-BB446F9E0DA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schleifen", "Schleifen\Schleifen.csproj", "{88AC8591-5A71-4CA5-97F4-BB446F9E0DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontrollstrukturen", "Kontrollstrukturen\Kontrollstrukturen.csproj", "{9CDAFC3B-1159-4B60-B7A2-576D38ABCA1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktionen", "Funktionen\Funktionen.csproj", "{6750BF04-D597-4E94-B22E-527F4086928B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{88AC8591-5A71-4CA5-97F4-BB446F9E0DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88AC8591-5A71-4CA5-97F4-BB446F9E0DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88AC8591-5A71-4CA5-97F4-BB446F9E0DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDAFC3B-1159-4B60-B7A2-576D38ABCA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDAFC3B-1159-4B60-B7A2-576D38ABCA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDAFC3B-1159-4B60-B7A2-576D38ABCA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDAFC3B-1159-4B60-B7A2-576D38ABCA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6750BF04-D597-4E94-B22E-527F4086928B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6750BF04-D597-4E94-B22E-527F4086928B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6750BF04-D597-4E94-B22E-527F4086928B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6750BF04-D597-4E94-B22E-527F4086928B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
