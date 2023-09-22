@@ -1,12 +1,12 @@
-﻿int GetNumber()
+﻿decimal GetNumber()
 {
-  int num = 0;
+  decimal num = 0;
   bool checkParse = false;
   do
   {
     Console.WriteLine("Gebe eine Zahl ein");
     string input = Console.ReadLine();
-    checkParse = int.TryParse(input, out num);
+    checkParse = decimal.TryParse(input, out num);
 
     if (checkParse == false)
     {
@@ -15,6 +15,8 @@
   } while (checkParse == false);
   return num;
 }
+
+#region Aufgabe
 
 //Aufgabe:
 
@@ -43,8 +45,7 @@
 }
 */
 
-
-
+#endregion
 
 string GetOperation()
 {
@@ -67,7 +68,9 @@ string GetOperation()
   return operation;
 }
 
-int Calculate(int num1, int num2, string operation)
+/* Ohne Kommazahlen:
+ 
+ int Calculate(int num1, int num2, string operation)
  
 {
   switch (operation)
@@ -85,17 +88,61 @@ int Calculate(int num1, int num2, string operation)
       return 0;
   }
 }
+*/
+
+// Mit Kommazahlen:
+decimal Calculate(decimal num1, decimal num2, string operation)
+
+{
+  switch (operation)
+  {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      if (num2 == 0)
+      {
+        Console.WriteLine("Ungültige Operation! Teiln durch null nicht erlaubt!");
+        return 0;
+      }
+      return num1 / num2;
+    default:
+      Console.WriteLine("Ungültige Operation:Mögliche Werte sind + - * /");
+      return 0;
+  }
+}
+
+
 
 Console.WriteLine("Willkommen beim Taschenrechner KevinIstDumm3000");
-//Get User input
+while (true)
+{
+  //Get User input
+  var num1 = GetNumber();
+  var num2 = GetNumber();
+  var operation = GetOperation();
 
-var num1 = GetNumber ();
-var num2 = GetNumber();
-var operation = GetOperation();
+  // Calculate result:
+  var result = Calculate(num1, num2, operation);
 
-var result = Calculate(num1, num2, operation);
+  // Display Output:
+  Console.WriteLine($"{num1} {operation} {num2} = {result}");
+
+  // Bildschirm clearen:
+  Console.WriteLine("------------------------------------");
+  Console.WriteLine("Drücke eine beliebige Taste um die Berechnung zu löschen und eine neue durchzuführen. Oder Strg+C um das Programm zu beenden");
+  Console.ReadKey();
+  Console.Clear();
 
 
-Console.WriteLine($"{num1} {operation} {num2} = {result}");
+
+}
+
+
+
+
 
 

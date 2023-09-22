@@ -20,3 +20,11 @@ for (int i = 0; i < 10; i++)
 {
   Console.WriteLine("FOR");
 }
+
+// 3.
+List<int> ints = new List<int>() { 1, 2, 3, 42, 100, 200, 23 };
+
+foreach (var x in ints)
+{
+  Console.WriteLine(x);
+}
